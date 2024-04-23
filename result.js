@@ -1,7 +1,3 @@
-// Retrieve score from localStorage and display it
-// const score = localStorage.getItem("score");
-// document.getElementById("score").textContent = score;
-
 const myKeyValue = window.location.search;
 const urlParams = new URLSearchParams(myKeyValue);
 const r1 = urlParams.get("q1");
@@ -33,5 +29,14 @@ if(r4 == ans4){
 if(r5 == ans5){
     score +=5;
 }
-document.getElementById("result").innerText = score;
-document.getElementsById("quiz_topic").innerText = "1. The global increase in greenhouse gases has been attributed to:";
+document.getElementById("result").innerText = "Your Score is : " +score+" Out of 25";
+document.getElementById("quiz_topic").innerHTML = "1. The global increase in greenhouse gases has been attributed to:<br>2. The proportion of all greenhouse gases created by coal is approximately:<br>3. Current research aims to increase the energy-producing efficiency of coal by:<br>4. Compared with ordinary coal new, 'clean' coals may generate power:<br>5. To control dust at mine sites, mining companies offen use:";
+
+let select1 = document.createElement("p");
+let newSelect1 = document.getElementById("selected_answers");
+newSelect1.append(select1);
+select1.innerText = "1) " +r1 +" 2) " +r2 +" 3) " +r3 +" 4) " +r4 +" 5) " +r5;
+let select2 = document.createElement("p");
+let newSelect2 = document.getElementById("correct_answers");
+newSelect2.append(select2);
+select2.innerText =  "1) " +ans1 +" 2) " +ans2 +" 3) " +ans3 +" 4) " +ans4 +" 5) " +ans5;

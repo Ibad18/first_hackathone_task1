@@ -23,3 +23,9 @@ label{
 h3{
     padding: 10px 0px;
 }
+#result{
+    font-size: 80px;
+}
+#result_page{
+    padding: 50px;
+}

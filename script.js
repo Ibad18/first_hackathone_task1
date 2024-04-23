@@ -25,10 +25,4 @@ function calculateResult(){
     var q4 = document.querySelector('input[name="q4"]:checked');
     var q5 = document.querySelector('input[name="q5"]:checked');
 
-    // var q1Value = q1.value;
-    // var q2Value = q2.value;
-    // var q3Value = q3.value;
-    // var q4Value = q4.value;
-    // var q5Value = q5.value;
-
 }
