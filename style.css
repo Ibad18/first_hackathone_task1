@@ -1,0 +1,25 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+#registeration_form{
+    width: 30%;
+    height: 50%;
+    background-color: grey;
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    margin: auto;
+}
+label{
+    font-size: 20px;
+}
+#registeration_form h2{
+    text-align: center;
+}
+#quiz_form{
+    padding: 20px 80px;
+}
+h3{
+    padding: 10px 0px;
+}
